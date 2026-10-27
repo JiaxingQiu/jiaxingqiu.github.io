@@ -28,7 +28,7 @@
       </div>
 
       <div>
-        <p class="bio">Hi! I am a Ph.D. candidate in Data Science at the University of Virginia, advised by <a href="https://www.tomhartvigsen.com/home">Dr. Thomas Hartvigsen</a>. My research focuses on <strong>machine learning in ever-changing environments</strong>. Motivated by real-world needs in healthcare, I explore three research directions: (1) learning from dynamic data (e.g., time series), (2) continually updating pretrained models (e.g., model editing), and (3) evaluating models under varying data assumptions. My work has been published in ICML, KDD, Statistical Methods in Medical Research, and Clinical Infectious Diseases.</p>
+        <p class="bio">Hi! I am a Ph.D. candidate in Data Science at the University of Virginia, advised by <a href="https://www.tomhartvigsen.com/home">Dr. Thomas Hartvigsen</a>. My research focuses on <strong>machine learning in ever-changing environments</strong>. Motivated by real healthcare settings, I explore three research directions: (1) learning from dynamic data (e.g., time series), (2) continually updating pretrained models (e.g., model editing), and (3) evaluating models under varying data assumptions. My work has been published in ICML, KDD, Statistical Methods in Medical Research, and Clinical Infectious Diseases.</p>
 
         <div class="facts">
           <div>
@@ -75,38 +75,122 @@
     </section>
 
     <section class="block pubs" id="publications">
-      <h2 class="side">Recent Publications</h2>
+      <h2 class="side">Publications</h2>
       <div>
-        <ul class="papers">
-          <li>
-            <p class="paper-title">Instruction-Based Time Series Editing</p>
-            <p class="authors"><span class="me">Jiaxing Qiu</span>, Dongliang Guo, Brynne Sullivan, Teague R. Henry, Thomas Hartvigsen</p>
-            <p class="meta">KDD 2026 [<a href="https://arxiv.org/abs/2508.01504">paper</a>, <a href="https://github.com/JiaxingQiu/InstructTime">code</a>]</p>
-          </li>
-          <li>
-            <p class="paper-title">ReasonEdit: Editing Vision–Language Models Using Human Reasoning</p>
-            <p class="authors"><span class="me">Jiaxing Qiu</span>, Kaihua Hou, Roxana Daneshjou, Ahmed Alaa, Thomas Hartvigsen</p>
-            <p class="meta">ICML 2026 [<a href="https://arxiv.org/abs/2602.02408">paper</a>, <a href="https://github.com/JiaxingQiu/reasonedit">code</a>]</p>
-          </li>
-          <li>
-            <p class="paper-title">BEDTime: A Unified Benchmark for Automatically Describing Time Series</p>
-            <p class="authors">Medhasweta Sen, Zachary Gottesman, <span class="me">Jiaxing Qiu</span>, C. Bayan Bruss, Nam Nguyen, Thomas Hartvigsen</p>
-            <p class="meta">ICML 2026 [<a href="https://arxiv.org/abs/2509.05215">paper</a>]</p>
-          </li>
-          <li>
-            <p class="paper-title">The Extended Community of Diet Culture Around Eating Disorders: A Network Analysis of Reddit Forums</p>
-            <p class="authors"><span class="me">Jiaxing Qiu</span>, Cheri A. Levinson, Jonathan Michael Kropko, Teague R. Henry, Alexander J. Gates</p>
-            <p class="meta">Applied Network Science 2026 [<a href="https://doi.org/10.1007/s41109-026-00787-2">paper</a>]</p>
-          </li>
-          <li>
-            <p class="paper-title">Development and Evaluation of a Prediction Model for Adult ICU Hemorrhage Using Only Continuous Cardiorespiratory Data</p>
-            <p class="authors">Andrew Barros, Brynne Sullivan, Matthew T. Clark, <span class="me">Jiaxing Qiu</span>, Jules Bergmann, Timothy Ruchti, Gilles Clermont</p>
-            <p class="meta">Physiological Measurement 2026 [<a href="https://doi.org/10.1088/1361-6579/ae4571">paper</a>]</p>
-          </li>
-        </ul>
-        <p class="see-all"><a href="publication/">all publications &gt;&gt;</a></p>
+        <p class="roadmap-tagline">What if we change&hellip;?</p>
+        <nav class="roadmap" aria-label="Research directions">
+          <button class="roadmap-node" data-target="papers-data" aria-expanded="false">
+            <span class="roadmap-circle">Data</span>
+          </button>
+          <span class="roadmap-dash" aria-hidden="true"></span>
+          <button class="roadmap-node" data-target="papers-model" aria-expanded="false">
+            <span class="roadmap-circle">Model</span>
+          </button>
+          <span class="roadmap-dash" aria-hidden="true"></span>
+          <button class="roadmap-node" data-target="papers-eval" aria-expanded="false">
+            <span class="roadmap-circle">Evaluation</span>
+          </button>
+        </nav>
+
+        <div class="roadmap-papers" id="papers-data" hidden>
+          <ul class="papers">
+            <li>
+              <p class="paper-title">Instruction-Based Time Series Editing</p>
+              <p class="authors"><span class="me">Jiaxing Qiu</span>, Dongliang Guo, Brynne Sullivan, Teague R. Henry, Thomas Hartvigsen</p>
+              <p class="meta">KDD 2026 [<a href="https://arxiv.org/abs/2508.01504">paper</a>, <a href="https://github.com/JiaxingQiu/InstructTime">code</a>]</p>
+            </li>
+          </ul>
+          <div class="group-more" hidden>
+            <ul class="papers">
+              <li>
+                <p class="paper-title">Highly Comparative Time Series Analysis of Oxygen Saturation and Heart Rate to Predict Respiratory Outcomes in Extremely Preterm Infants</p>
+                <p class="authors"><span class="me">Jiaxing Qiu</span>, Juliann M. Di Fiore, et al.</p>
+                <p class="meta">Physiological Measurement 2024 [<a href="https://doi.org/10.1088/1361-6579/ad4e91">paper</a>]</p>
+              </li>
+              <li>
+                <p class="paper-title">Ordinal Outcome State-Space Models for Intensive Longitudinal Data</p>
+                <p class="authors">Teague R. Henry, Lindley R. Slipetz, Ami Falk, <span class="me">Jiaxing Qiu</span>, Meng Chen</p>
+                <p class="meta">Psychometrika 2024 [<a href="https://doi.org/10.1007/s11336-024-09984-3">paper</a>]</p>
+              </li>
+            </ul>
+          </div>
+          <p class="group-toggle"><a href="#" class="toggle-more">more publications &gt;&gt;</a></p>
+        </div>
+
+        <div class="roadmap-papers" id="papers-model" hidden>
+          <ul class="papers">
+            <li>
+              <p class="paper-title">ReasonEdit: Editing Vision–Language Models Using Human Reasoning</p>
+              <p class="authors"><span class="me">Jiaxing Qiu</span>, Kaihua Hou, Roxana Daneshjou, Ahmed Alaa, Thomas Hartvigsen</p>
+              <p class="meta">ICML 2026 [<a href="https://arxiv.org/abs/2602.02408">paper</a>, <a href="https://github.com/JiaxingQiu/reasonedit">code</a>]</p>
+            </li>
+          </ul>
+        </div>
+
+        <div class="roadmap-papers" id="papers-eval" hidden>
+          <ul class="papers">
+            <li>
+              <p class="paper-title">BEDTime: A Unified Benchmark for Automatically Describing Time Series</p>
+              <p class="authors">Medhasweta Sen, Zachary Gottesman, <span class="me">Jiaxing Qiu</span>, C. Bayan Bruss, Nam Nguyen, Thomas Hartvigsen</p>
+              <p class="meta">ICML 2026 [<a href="https://arxiv.org/abs/2509.05215">paper</a>]</p>
+            </li>
+          </ul>
+          <div class="group-more" hidden>
+            <ul class="papers">
+              <li>
+                <p class="paper-title">Fast Leave-One-Cluster-Out Cross-Validation Using Clustered Network Information Criterion</p>
+                <p class="authors"><span class="me">Jiaxing Qiu</span>, Douglas E. Lake, Pavel Chernyavskiy, Teague R. Henry</p>
+                <p class="meta">Statistical Methods in Medical Research 2025 [<a href="https://doi.org/10.1177/09622802251345486">paper</a>]</p>
+              </li>
+            </ul>
+          </div>
+          <p class="group-toggle"><a href="#" class="toggle-more">more publications &gt;&gt;</a></p>
+        </div>
+
       </div>
     </section>
+
+    <script>
+      (function () {
+        function collapseMore(panel) {
+          var more = panel.querySelector('.group-more');
+          var link = panel.querySelector('.toggle-more');
+          if (more) { more.hidden = true; }
+          if (link) { link.textContent = 'more publications >>'; }
+        }
+
+        var nodes = document.querySelectorAll('.roadmap-node');
+        nodes.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            var target = document.getElementById(btn.dataset.target);
+            var isOpen = btn.getAttribute('aria-expanded') === 'true';
+
+            nodes.forEach(function (b) {
+              var p = document.getElementById(b.dataset.target);
+              b.setAttribute('aria-expanded', 'false');
+              p.hidden = true;
+              collapseMore(p);
+            });
+
+            if (!isOpen) {
+              btn.setAttribute('aria-expanded', 'true');
+              target.hidden = false;
+            }
+          });
+        });
+
+        document.querySelectorAll('.toggle-more').forEach(function (link) {
+          link.addEventListener('click', function (e) {
+            e.preventDefault();
+            var panel = link.closest('.roadmap-papers');
+            var more = panel.querySelector('.group-more');
+            var showing = !more.hidden;
+            more.hidden = showing;
+            link.textContent = showing ? 'more publications >>' : 'collapse <<';
+          });
+        });
+      })();
+    </script>
   </main>
 </body>
 </html>
