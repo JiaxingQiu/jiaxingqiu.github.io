@@ -130,9 +130,11 @@ h3 {
 
 .facts p {
   margin: 0;
+  font-size: 0.9rem;
 }
 
 .school {
+  font-size: 0.75rem;
   line-height: 1.35;
 }
 
