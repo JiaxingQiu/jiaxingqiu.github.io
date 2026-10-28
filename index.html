@@ -29,7 +29,7 @@
       </div>
 
       <div>
-        <p class="bio">Hi! I am a Ph.D. candidate in Data Science at the University of Virginia, advised by <a href="https://www.tomhartvigsen.com/home">Dr. Thomas Hartvigsen</a>. My research focuses on <strong>machine learning in the changing environments</strong>. Motivated by <strong>healthcare needs and insights</strong>, I explore three research directions: (1) learning from dynamic data, (2) continually updating pretrained models, and (3) evaluating methods or models under varying data assumptions. My work has been published in ICML, KDD, Statistical Methods in Medical Research, and Clinical Infectious Diseases.</p>
+        <p class="bio">Hi! I am a Ph.D. candidate in Data Science at the University of Virginia, advised by <a href="https://www.tomhartvigsen.com/home">Dr. Thomas Hartvigsen</a>. My research focuses on <strong>machine learning in the changing environments</strong>. Motivated by <strong>healthcare needs and insights</strong>, I explore three research directions: (1) learning from dynamic data, (2) continually updating pretrained models, and (3) evaluating methods or models under varying data assumptions. My work has been published in ICML, KDD, Statistical Methods in Medical Research, Clinical Infectious Diseases, and other venues.</p>
 
         <div class="facts">
           <div>
@@ -268,8 +268,43 @@
             var more = panel.querySelector('.group-more');
             var showing = !more.hidden;
             more.hidden = showing;
-            link.textContent = showing ? 'more publications >>' : 'collapse <<';
+            link.textContent = showing ? 'more >>' : 'less <<';
           });
+        });
+      })();
+
+      (function () {
+        var dogPhotos = [
+          'winter/04962AD9-2997-4545-8170-CE5497F32AA1_1_105_c.jpeg',
+          'winter/0EB18F0C-2A86-4A03-88CC-48B860575A6A_1_105_c.jpeg',
+          'winter/F786C7A9-F464-40B9-8793-AA6B0C5219D2_1_105_c.jpeg',
+          'winter/1288E80A-A83D-47A9-A0F7-3E319DEFA711_1_105_c.jpeg',
+          'winter/39E9413C-37BB-4044-80CA-72D12A505FFE_1_105_c.jpeg',
+          'winter/6FEF0571-AECB-45EE-BDBC-351147D2D28F_1_105_c.jpeg',
+          'winter/F7F75F35-18A9-46CA-B718-5AE532FD8950_1_105_c.jpeg',
+          'winter/AB5A9F3C-236A-469F-8359-7BE40E155959_1_105_c.jpeg',
+          'winter/05EFC462-1724-4198-9635-5598823DD63B_1_105_c.jpeg',
+          'winter/AF339C8F-E380-487F-8B51-D821C3A603DC_1_105_c.jpeg',
+          'winter/2D672CF1-018C-4F0B-BDCA-A2A533A1F535_1_105_c.jpeg',
+          'winter/7341F151-30D7-46FE-BD84-7C7FC8749BE9_1_105_c.jpeg',
+          'winter/D7F1F0BD-CC3F-4AF3-8229-7B304E52B44D_1_105_c.jpeg',
+          'winter/3EB36F45-24A5-4627-84B6-AB390444B825_1_105_c.jpeg',
+          'winter/7FE08C72-6132-4088-B003-4D826A2FF5BC_1_105_c.jpeg',
+          'winter/60E61022-B7D6-4FBA-9BA5-52F1F2F3B416_1_105_c.jpeg'
+        ];
+        var portrait = document.querySelector('.portrait');
+        var originalSrc = portrait.src;
+        var lastIdx = -1;
+        portrait.addEventListener('mouseenter', function () {
+          var idx;
+          do {
+            idx = Math.floor(Math.random() * dogPhotos.length);
+          } while (idx === lastIdx);
+          lastIdx = idx;
+          portrait.src = dogPhotos[idx];
+        });
+        portrait.addEventListener('mouseleave', function () {
+          portrait.src = originalSrc;
         });
       })();
     </script>
