@@ -9,21 +9,19 @@
   <meta property="og:url" content="https://jiaxingqiu.com">
   <meta name="author" content="Jiaxing Qiu">
   <meta name="theme-color" content="#ffffff">
-  <link rel="icon" id="favicon" href="favicon.png" type="image/png">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css">
-  <link rel="stylesheet" id="main-css" href="styles.css">
   <script>
     var t=Date.now();
-    document.getElementById('main-css').href='styles.css?v='+t;
-    document.getElementById('favicon').href='favicon.png?v='+t;
+    document.write('<link rel="icon" href="favicon.png?v='+t+'" type="image/png">');
+    document.write('<link rel="stylesheet" href="styles.css?v='+t+'">');
   </script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1.9.1/css/academicons.min.css">
 </head>
 <body>
   <main class="page">
     <section class="block" id="top">
       <div class="identity">
-        <img class="portrait" src="headshot.jpg?v=2" alt="Portrait of Jiaxing Qiu">
+        <img class="portrait" src="headshot.jpg?v=2" alt="Portrait of Jiaxing Qiu" width="280" height="280" style="max-width:100%;border-radius:50%;object-fit:cover">
         <h1>Jiaxing (Joy) Qiu</h1>
         <p class="role">Ph.D. Candidate in Data Science<br>University of Virginia</p>
         <p class="links">
