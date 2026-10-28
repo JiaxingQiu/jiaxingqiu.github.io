@@ -7,8 +7,13 @@
   <meta name="description" content="Publications by Jiaxing Qiu, Ph.D. candidate in Data Science at the University of Virginia.">
   <meta name="author" content="Jiaxing Qiu">
   <meta name="theme-color" content="#ffffff">
-  <link rel="icon" href="../favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="../styles.css">
+  <link rel="icon" id="favicon" href="../favicon.png" type="image/png">
+  <link rel="stylesheet" id="main-css" href="../styles.css">
+  <script>
+    var t=Date.now();
+    document.getElementById('main-css').href='../styles.css?v='+t;
+    document.getElementById('favicon').href='../favicon.png?v='+t;
+  </script>
 </head>
 <body>
   <main class="page pub-page">
