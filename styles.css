@@ -245,6 +245,7 @@ h3 {
   display: flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
   width: 90px;
   height: 90px;
   border: 1.5px solid #111;
